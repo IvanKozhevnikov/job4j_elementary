@@ -19,8 +19,8 @@ public class MaxTest {
     }
 
     @Test
-    public void whenMax9To7Then7() {
-        int result = Max.max(350, 257);
-        assertThat(result, is(350));
+    public void whenMax330To257Then330() {
+        int result = Max.max(330, 257);
+        assertThat(result, is(330));
     }
 }
