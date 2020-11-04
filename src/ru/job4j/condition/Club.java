@@ -1,4 +1,4 @@
-package ru.job4j.ru.job4j.condition;
+package ru.job4j.condition;
 
 public class Club {
     public static void permission(boolean hasMoney, boolean beFriend) {
