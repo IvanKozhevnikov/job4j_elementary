@@ -17,7 +17,7 @@ public class CounterTest {
     @Test
     public void whenSumEvenNumbersFromminfourToTenThenThirty() {
         int rsl = Counter.sumByEven(-4, 10);
-        int expected = 36;
+        int expected = 24;
         assertThat(rsl, is(expected));
     }
 }
