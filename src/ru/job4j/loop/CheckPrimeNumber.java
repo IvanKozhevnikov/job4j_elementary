@@ -12,7 +12,7 @@ public class CheckPrimeNumber {
         if (number == 0 || number == 1) {
             prime = false;
         }
-        if (prime != false) {
+        if (prime) {
             return prime;
         }
         return prime;
