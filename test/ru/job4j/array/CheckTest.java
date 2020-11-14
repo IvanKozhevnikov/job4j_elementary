@@ -18,4 +18,11 @@ public class CheckTest {
         boolean result = Check.mono(input);
         assertThat(result, is(false));
     }
+
+    @Test
+    public void whenDataNotMonoByFalseThenTrue() {
+        boolean[] input = new boolean[] {true, false, true};
+        boolean result = Check.mono(input);
+        assertThat(result, is(false));
+    }
 }
