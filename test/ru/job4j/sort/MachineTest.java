@@ -21,5 +21,13 @@ public class MachineTest {
         int[] rsl = machine.change(50, 35);
         assertThat(rsl, is(expected));
     }
+
+    @Test
+    public void when71by35() {
+        Machine machine = new Machine();
+        int[] expected = {10, 10, 10, 5, 2};
+        int[] rsl = machine.change(72, 35);
+        assertThat(rsl, is(expected));
+    }
 }
 

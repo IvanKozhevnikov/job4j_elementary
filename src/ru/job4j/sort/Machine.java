@@ -12,9 +12,7 @@ public class Machine {
             for (int j = 0; j < coins.length; j++) {
                 while (money >= coins[j]) {
                         money -= coins[j];
-                        rsl[size] = coins[j];
-                        j++;
-                    size = j;
+                        rsl[size++] = coins[j];
                 }
             }
         return Arrays.copyOf(rsl, size);
