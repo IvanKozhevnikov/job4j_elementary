@@ -13,14 +13,4 @@ public class Merge {
         }
         return rsl;
     }
-
-    public static void main(String[] args) {
-        int[] result = Merge.merge(
-                new int[] {1, 3},
-                new int[] {2, 4}
-        );
-        for (int i : result) {
-            System.out.println(i);
-        }
-    }
 }
