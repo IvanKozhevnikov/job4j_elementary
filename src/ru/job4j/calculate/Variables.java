@@ -5,7 +5,6 @@ public class Variables {
     float b = 78.0332F;
     boolean c = true;
     int age = 18;
-
     char sex = 'm';
     short height = 160;
     int bricks = 3000000;

@@ -8,8 +8,6 @@ public class MinDiapason {
                 min = array[index];
             }
         }
-        /*        for (int i = ...; i < ...; i++) { */
-        /*        } */
         return min;
     }
 }

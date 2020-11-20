@@ -11,8 +11,3 @@ public class MatrixSum {
         return rsl;
     }
 }
-/* for (int[] ints : array) {
-         for (int cell = 0; cell < ints.length; cell++) {
-        rsl += ints[cell];
-        }
-        }*/

@@ -7,7 +7,6 @@ public class Min {
             if (min > array[index]) {
                 min = array[index];
             }
-            /* проверить, что эталон больше, чем элемент. записать в эталон элемент массива. */
         }
         return min;
     }
