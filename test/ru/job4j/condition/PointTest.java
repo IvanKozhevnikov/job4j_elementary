@@ -8,11 +8,9 @@ public class PointTest {
     @Test
     public void when01to04then3() {
         int expected = 3;
-        int x1 = 0;
-        int y1 = 1;
-        int x2 = 0;
-        int y2 = 4;
-        double out = Point.distance(x1, y1, x2, y2);
+        Point a = new Point(0, 1);
+        Point b = new Point(0, 4);
+        double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 
@@ -23,7 +21,9 @@ public class PointTest {
         int y1 = -1;
         int x2 = 0;
         int y2 = -5;
-        double out = Point.distance(x1, y1, x2, y2);
+        Point a = new Point(0, -1);
+        Point b = new Point(0, -5);
+        double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 
@@ -34,7 +34,9 @@ public class PointTest {
         int y1 = 2;
         int x2 = 1;
         int y2 = 6;
-        double out = Point.distance(x1, y1, x2, y2);
+        Point a = new Point(1, 2);
+        Point b = new Point(1, 6);
+        double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 }
