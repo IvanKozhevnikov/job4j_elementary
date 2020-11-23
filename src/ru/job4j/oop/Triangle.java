@@ -26,8 +26,7 @@ public class Triangle {
         double bc = second.distance(third);
         double p = period(ab, ac, bc);
         if (this.exist(ab, ac, bc)) {
-            double trgArea = Math.sqrt(p * (p - ab) * (p - ac) * (p - bc));
-            rsl = trgArea;
+            rsl = Math.sqrt(p * (p - ab) * (p - ac) * (p - bc));
         }
         return rsl;
     }
