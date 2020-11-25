@@ -9,8 +9,8 @@ public class College {
         student.setFullName("Кожевников Иван Михайлович");
         student.setGroup("Стажёр");
         student.setDateOfReceipt(new Date(2020, Calendar.NOVEMBER, 25, 11, 45, 15));
-        System.out.println(student.getFullName() + "\n"
-                + student.getGroup() + "\n" +  student.getDateOfReceipt());
+        System.out.println(student.getFullName() + System.lineSeparator()
+                + student.getGroup() + System.lineSeparator() +  student.getDateOfReceipt());
 
     }
 }
