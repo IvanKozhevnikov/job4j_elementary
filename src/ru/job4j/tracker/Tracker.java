@@ -66,11 +66,11 @@ public class Tracker {
         int i = indexOf(id);
         boolean rsl = i != -1;
         if (rsl) {
-            items[indexOf(id)] = null;
             System.arraycopy(items, (i + 1), items, i, (size - i));
             items[size - 1] = null;
             size--;
+            return true;
         }
-        return rsl;
+        return false;
     }
 }
