@@ -21,7 +21,7 @@ public class StartUI {
                 System.out.println("Весь список заявок");
                 Item[] allListTracker = tracker.findByAll();
                 for (Item item : allListTracker) {
-                    System.out.println(Arrays.toString(new Item[]{item}));
+                    System.out.println(item);
                 }
             } else if (select == 2) {
                 System.out.println("Введите номер Id");
@@ -31,8 +31,7 @@ public class StartUI {
                 Item item = new Item(name);
                 if (tracker.replace(id, item)) {
                     System.out.println("Заявка изменена успешно");
-                }
-                if (!(tracker.replace(id, item))) {
+                } else {
                     System.out.println("Чтото пошло не так");
                 }
             } else if (select == 3) {
@@ -49,8 +48,7 @@ public class StartUI {
                 Item findItem = tracker.findById(id);
                 if (findItem != null) {
                     System.out.println("Искомая заявка: " + findItem.toString());
-                }
-                if (findItem == null) {
+                } else {
                     System.out.println("Заявка с таким id не найдена");
                 }
             } else if (select == 5) {
@@ -59,8 +57,7 @@ public class StartUI {
                 Item[] findItem = tracker.findByName(name);
                 if (findItem.length > 0) {
                     for (Item item : findItem) {
-                        System.out.println(Arrays.toString(new Item[]{item}));
-                        break;
+                        System.out.println(item);
                     }
                 } else {
                     System.out.println("Заявки с таким именем не найдены");
