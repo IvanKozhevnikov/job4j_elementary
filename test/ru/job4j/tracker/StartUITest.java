@@ -89,7 +89,8 @@ public class StartUITest {
         Item[] findItem = tracker.findByName("Item name");
         String expectedArray = String.valueOf(findItem[0]);
         for (int i = 1; i < findItem.length; i++) {
-            expectedArray = expectedArray + System.lineSeparator() + findItem[i];}
+            expectedArray = expectedArray + System.lineSeparator() + findItem[i];
+        }
         Input in = new StubInput(
                 new String[]{"0", String.valueOf(item.getName()), "1"}
         );
@@ -99,15 +100,15 @@ public class StartUITest {
         };
         new StartUI(out).init(in, tracker, actions);
         assertThat(out.toString(), is(
-            "Menu." + System.lineSeparator() +
-                    "0. === Search for a Item by name ====" + System.lineSeparator() +
-                    "1. === Exit ====" + System.lineSeparator() +
-                    expectedArray + System.lineSeparator() +
-                    "Menu." + System.lineSeparator() +
-                    "0. === Search for a Item by name ====" + System.lineSeparator() +
-                    "1. === Exit ====" + System.lineSeparator() +
-                    "The application is finished" + System.lineSeparator()
-         ));
+                "Menu." + System.lineSeparator() +
+                        "0. === Search for a Item by name ====" + System.lineSeparator() +
+                        "1. === Exit ====" + System.lineSeparator() +
+                        expectedArray + System.lineSeparator() +
+                        "Menu." + System.lineSeparator() +
+                        "0. === Search for a Item by name ====" + System.lineSeparator() +
+                        "1. === Exit ====" + System.lineSeparator() +
+                        "The application is finished" + System.lineSeparator()
+        ));
     }
 
     @Test
