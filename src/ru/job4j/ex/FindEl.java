@@ -1,13 +1,11 @@
 package ru.job4j.ex;
 
-import java.util.Arrays;
-
 public class FindEl {
     public static int indexOf(String[] value, String key) throws ElementNotFoundException {
         int rsl = -1;
-        for (String i : value) {
-            if (i.equals(key)) {
-                rsl = Arrays.asList(value).indexOf(i);
+        for (int i = 0; i < value.length; i++) {
+            if (value[i].equals(key)) {
+                rsl = i;
             }
         }
         if (rsl == -1) {
@@ -18,7 +16,7 @@ public class FindEl {
 
     public static void main(String[] args) {
         String[] array = {"Ivan", "Alexander"};
-        String key = "Alexander";
+        String key = "Ivan";
         try {
             System.out.println(indexOf(array, key));
         } catch (ElementNotFoundException e) {
