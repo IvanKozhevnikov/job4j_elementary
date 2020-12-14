@@ -6,7 +6,6 @@ public class TrackerSingleTwo {
 
     private static TrackerSingleTwo instance;
 
-
     private TrackerSingleTwo() {
     }
 

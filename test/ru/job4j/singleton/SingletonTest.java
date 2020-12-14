@@ -29,6 +29,7 @@ public class SingletonTest {
         TrackerSingleThree result = TrackerSingleThree.getInstance();
         TrackerSingleThree expected = TrackerSingleThree.getInstance();
         assertSame(result, expected);
+
     }
 
     @Test
