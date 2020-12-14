@@ -2,16 +2,17 @@ package ru.job4j.tracker.singleton.two;
 
 import ru.job4j.tracker.Item;
 
-public class Tracker {
+public class TrackerSingleTwo {
 
-    private static Tracker instance;
+    private static TrackerSingleTwo instance;
 
-    private Tracker() {
+
+    private TrackerSingleTwo() {
     }
 
-    public static Tracker getInstance() {
+    public static TrackerSingleTwo getInstance() {
         if (instance == null) {
-            instance = new Tracker();
+            instance = new TrackerSingleTwo();
         }
         return instance;
     }
@@ -20,4 +21,3 @@ public class Tracker {
         return item;
     }
 }
-
