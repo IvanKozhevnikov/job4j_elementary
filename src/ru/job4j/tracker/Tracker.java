@@ -62,7 +62,6 @@ public class Tracker {
         for (Item i : items) {
             if (i.getName().equals(key)) {
                 rsl.add(i);
-                break;
             }
         }
         return rsl;
